@@ -1,0 +1,24 @@
+<div class="col">
+  <form  #myForm="ngForm" (ngSubmit)="submitForm()"class="ui huge form">
+    <div class="field">
+      <h1>LOGIN</h1>
+      <label id="label1">Email</label>
+       <input type="email"  id ="input1" name="email" required [(ngModel)]="email" class="form-control input-underline input-lg" placeholder="email"  >
+    </div>
+    <div class="field">
+      <label id="label11">Password</label>
+      <input type="password" required minlength="8" name="password" [(ngModel)]="password" class="form-control" placeholder="password">
+    </div>
+    <div class="field" id="label2">
+
+    </div>
+    <button class="ui fluid yellow large submit  button" [disabled]="!myForm.form.valid" [routerLink]="['userProfile']"><span>LOGIN</span></button>
+    <div id="label3" class="field">
+
+    </div>
+  </form>
+</div>
+
+
+
+
